@@ -20,26 +20,13 @@ export default function HeroSection() {
     const contentItems = container.querySelectorAll('.hero__content-item');
     const inlineSlides = container.querySelectorAll('.hero__inline-slide');
 
-    // Stop Lenis smooth scroll
-    const lenisInstance = (window as any).lenis;
-    if (lenisInstance) {
-      lenisInstance.stop();
-    }
-
     const tl = gsap.timeline({
       defaults: { ease: 'expo.inOut' },
       onStart: () => {
         container.classList.remove('is--hidden');
-        document.body.style.overflow = 'hidden';
       },
       onComplete: () => {
-        document.body.style.overflow = '';
         container.classList.remove('is--loading');
-
-        // Restart Lenis
-        if (lenisInstance) {
-          lenisInstance.start();
-        }
 
         window.dispatchEvent(new CustomEvent('heroAnimationComplete'));
       },
@@ -124,12 +111,6 @@ export default function HeroSection() {
 
     return () => {
       tl.kill();
-      document.body.style.overflow = '';
-
-      // Ensure Lenis is restarted on cleanup
-      if (lenisInstance) {
-        lenisInstance.start();
-      }
     };
   }, []);
 

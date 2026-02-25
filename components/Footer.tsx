@@ -1,11 +1,20 @@
 'use client';
 import { footerData } from '@/data/footer';
-import { BarChart, BarChart2, BarChart2Icon, DribbbleIcon, InstagramIcon, LinkedinIcon, MessageCircle, TwitterIcon, YoutubeIcon } from 'lucide-react';
+import {
+  BarChart,
+  BarChart2,
+  BarChart2Icon,
+  DribbbleIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  MessageCircle,
+  TwitterIcon,
+  YoutubeIcon,
+} from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'motion/react';
 import { IFooterLink } from '@/types';
-
 
 export default function Footer() {
   return (
@@ -53,10 +62,18 @@ export default function Footer() {
           Bringing the nation’s best competitive programmers together March 21–22, 2026.
         </p>
         <div className="flex items-center gap-4 mt-3">
-          <a href="https://www.instagram.com/codersclub_iiitk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/codersclub_iiitk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            rel="noreferrer"
+          >
             <InstagramIcon className="size-5 hover:text-pink-500" />
           </a>
-          <a href="https://www.linkedin.com/company/codersclub-iiitk/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/company/codersclub-iiitk/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <LinkedinIcon className="size-5 hover:text-pink-500" />
           </a>
           <a href="https://discord.gg/7NVbjQVEh5" target="_blank" rel="noreferrer">

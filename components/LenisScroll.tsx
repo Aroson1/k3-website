@@ -5,9 +5,31 @@ import Lenis from 'lenis';
 export default function LenisScroll() {
   useEffect(() => {
     let lenis: Lenis | null = null;
-    let rafId: number;
+    let rafId: number | null = null;
+    const html = document.documentElement;
+    const body = document.body;
+
+    const originalHtmlOverflowX = html.style.overflowX;
+    const originalHtmlOverflowY = html.style.overflowY;
+    const originalBodyOverflow = body.style.overflow;
+
+    const lockScroll = () => {
+      html.style.overflowX = 'hidden';
+      html.style.overflowY = 'hidden';
+      body.style.overflow = 'hidden';
+    };
+
+    const restoreScroll = () => {
+      html.style.overflowX = originalHtmlOverflowX;
+      html.style.overflowY = originalHtmlOverflowY;
+      body.style.overflow = originalBodyOverflow;
+    };
+
+    lockScroll();
 
     const initLenis = () => {
+      if (lenis) return;
+
       lenis = new Lenis({
         duration: 1.2,
         smoothWheel: true,
@@ -25,7 +47,7 @@ export default function LenisScroll() {
     };
 
     const onAnimationDone = () => {
-      document.body.style.overflow = '';
+      restoreScroll();
       initLenis();
     };
 
@@ -35,6 +57,7 @@ export default function LenisScroll() {
       window.removeEventListener('heroAnimationComplete', onAnimationDone);
       if (rafId) cancelAnimationFrame(rafId);
       if (lenis) lenis.destroy();
+      restoreScroll();
     };
   }, []);
 
