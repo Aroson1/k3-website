@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function TestimonialCard({ testimonial, index }: TestimonialCardProps) {
   return (
     <motion.div
-      className="p-4 rounded-xl mx-4 w-72 shrink-0 bg-slate-950/80 border border-slate-800/50 hover:border-pink-900/40 transition-colors duration-300"
+      className="p-4 rounded-xl mx-4 w-72 shrink-0 bg-slate-950/80 border border-slate-800/50 hover:border-pink-900/40 transition-colors duration-300 hoverable card"
       initial={{ y: 150, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}

@@ -105,7 +105,7 @@ export default function Pricing() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
-              className="rounded-[24px] border border-white/[0.08] p-1.5 overflow-hidden relative shadow-xl aspect-[2/3]"
+              className="rounded-[24px] border border-white/[0.08] p-1.5 overflow-hidden relative shadow-xl aspect-[2/3] hoverable pricing-card"
               style={{
                 backgroundImage: 'url(/pricing_bg.svg)',
                 backgroundSize: 'cover',
@@ -130,7 +130,7 @@ export default function Pricing() {
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   <Link
                     href="#contact"
-                    className={`block text-center py-3 rounded-full font-medium text-sm transition-all ${
+                    className={`block text-center py-3 rounded-full font-medium text-sm transition-all hoverable ${
                       plan.highlighted
                         ? 'bg-gradient-to-b from-pink-600 to-pink-400 text-white shadow-lg shadow-pink-500/30'
                         : 'bg-white/5 hover:bg-white/10 text-white border border-white/10'

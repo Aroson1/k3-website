@@ -6,6 +6,7 @@
 
 html, body {
     overflow-x: hidden;
+    cursor: none;
 }
 
 body {
@@ -18,7 +19,50 @@ body::selection {
 }
 
 button {
-    @apply cursor-pointer;
+    @apply cursor-none;
+}
+
+a {
+    cursor: none;
+}
+
+/* ==================== Custom Cursor ==================== */
+.custom-cursor {
+    z-index: 9999;
+    background-color: rgb(236, 72, 153);
+    border: 1px solid rgb(236, 72, 153);
+    border-radius: 100em;
+    width: 0.75em;
+    height: 0.75em;
+    position: fixed;
+    inset: 0% auto auto 0%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition:
+        background-color 0.35s cubic-bezier(0.625, 0.05, 0, 1),
+        width 0.35s cubic-bezier(0.625, 0.05, 0, 1),
+        height 0.35s cubic-bezier(0.625, 0.05, 0, 1),
+        opacity 0.2s ease;
+}
+
+.custom-cursor.is--hover {
+    width: 3em;
+    height: 3em;
+    background-color: rgba(236, 72, 153, 0.25);
+}
+
+.custom-cursor.is--pressed {
+    width: 2em;
+    height: 2em;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .custom-cursor {
+        display: none;
+    }
+    html, body {
+        cursor: auto;
+    }
 }
 
 /* Dark concrete tiled background for content sections */
