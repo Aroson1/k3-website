@@ -6,7 +6,6 @@
 
 html, body {
     overflow-x: hidden;
-    cursor: none;
 }
 
 body {
@@ -19,11 +18,7 @@ body::selection {
 }
 
 button {
-    @apply cursor-none;
-}
-
-a {
-    cursor: none;
+    @apply cursor-pointer;
 }
 
 /* ==================== Custom Cursor ==================== */
