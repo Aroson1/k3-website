@@ -1,28 +1,42 @@
-"use client";
-import { useEffect } from "react";
-import Lenis from "lenis";
+'use client';
+import { useEffect } from 'react';
+import Lenis from 'lenis';
 
 export default function LenisScroll() {
-    useEffect(() => {
-        const lenis = new Lenis({
-            duration: 1.2,
-            smoothWheel: true,
-            anchors: {
-                offset: -100,
-            },
-        });
+  useEffect(() => {
+    let lenis: Lenis | null = null;
+    let rafId: number;
 
-        const raf = (time: number) => {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        };
+    const initLenis = () => {
+      lenis = new Lenis({
+        duration: 1.2,
+        smoothWheel: true,
+        anchors: {
+          offset: -100,
+        },
+      });
 
-        requestAnimationFrame(raf);
+      const raf = (time: number) => {
+        lenis!.raf(time);
+        rafId = requestAnimationFrame(raf);
+      };
 
-        return () => {
-            lenis.destroy();
-        };
-    }, []);
+      rafId = requestAnimationFrame(raf);
+    };
 
-    return null;
+    const onAnimationDone = () => {
+      document.body.style.overflow = '';
+      initLenis();
+    };
+
+    window.addEventListener('heroAnimationComplete', onAnimationDone);
+
+    return () => {
+      window.removeEventListener('heroAnimationComplete', onAnimationDone);
+      if (rafId) cancelAnimationFrame(rafId);
+      if (lenis) lenis.destroy();
+    };
+  }, []);
+
+  return null;
 }

@@ -15,7 +15,7 @@ K³ is an offline national-level competitive programming contest, hosted on Code
 
 ---
 
-# Host Institute — IIIT Kottayam
+# Host Institute  IIIT Kottayam
 
 IIIT Kottayam is an Institute of National Importance established by the Ministry of Education, Government of India.
 
@@ -29,7 +29,7 @@ Partnering with IIIT Kottayam means direct visibility among skilled, job-ready e
 
 ---
 
-# Coders’ Club — IIIT Kottayam
+# Coders’ Club  IIIT Kottayam
 
 Coders’ Club is the official competitive programming club of IIIT Kottayam.
 
@@ -67,7 +67,7 @@ Mentor @ TLE Eliminators
 
 ## CodeQuest
 
-Online competitive programming contest organized as part of Apoorv — IIIT Kottayam’s annual techno-cultural fest.
+Online competitive programming contest organized as part of Apoorv  IIIT Kottayam’s annual techno-cultural fest.
 
 * Participants from IIITs, NITs, and other engineering colleges across India
 * IIIT Kottayam team secured 1st place
@@ -76,9 +76,9 @@ Online competitive programming contest organized as part of Apoorv — IIIT Kott
 
 # Contest Structure
 
-1. Debugging Round — Fix incorrect code
-2. Reverse Coding Round — Deduce logic from outputs
-3. Head-to-Head Finals — Fastest team wins
+1. Debugging Round  Fix incorrect code
+2. Reverse Coding Round  Deduce logic from outputs
+3. Head-to-Head Finals  Fastest team wins
 
 ---
 
@@ -93,9 +93,9 @@ Online competitive programming contest organized as part of Apoorv — IIIT Kott
 
 # Sponsorship Tiers
 
-Title Sponsor — ₹60,000
-Gold Sponsor — ₹35,000
-Event Sponsor — ₹20,000
+Title Sponsor  ₹60,000
+Gold Sponsor  ₹35,000
+Event Sponsor  ₹20,000
 
 ### Benefits
 
@@ -118,8 +118,8 @@ Event Sponsor — ₹20,000
 
 # Registration Details
 
-IIIT Kottayam students — Free
-Teams from outside — ₹200 per team
+IIIT Kottayam students  Free
+Teams from outside  ₹200 per team
 
 Ensures wide participation and a competitive talent pool.
 
