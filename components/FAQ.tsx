@@ -8,7 +8,7 @@ const faqs = [
   {
     question: 'What is K³ and how does it work?',
     answer:
-      "K³ is an offline national-level competitive programming contest organized by the Coders' Club of IIIT Kottayam. It features three intense rounds  Debugging, Reverse Coding, and Head-to-Head Finals  all hosted on the Codeforces platform. Teams compete to test their algorithmic and problem-solving skills.",
+      "K³ (Kottayam Koding Kontest) is an offline national-level competitive programming contest organized by the Coders' Club of IIIT Kottayam. It runs as one flagship Codeforces round that brings every team on campus together to test their algorithmic and problem-solving skills.",
   },
   {
     question: 'Who can participate in K³?',
@@ -16,14 +16,14 @@ const faqs = [
       'K³ is open to all college students across India. Teams can register on our website. IIIT Kottayam students can register for free, while outside teams pay a nominal fee of ₹200 per team.',
   },
   {
-    question: 'What are the contest rounds?',
+    question: 'What is the contest format?',
     answer:
-      'The contest comprises three rounds: Round 1 is Debugging  identify and fix bugs in incorrect code. Round 2 is Reverse Coding  deduce the logic from sample outputs. Round 3 is Head-to-Head Finals  a direct face-off where the fastest team to solve wins the championship.',
+      'K³ is a single, extended competitive programming round hosted on Codeforces. Teams solve a curated problem set in one sitting, and standings are finalized at the end of that round.',
   },
   {
     question: 'What is the prize pool?',
     answer:
-      'K³ features a prize pool of ₹1.5 Lakhs+. Prizes are distributed to the top-performing teams across the final rounds. Detailed prize breakdowns will be announced closer to the event.',
+      'K³ features a prize pool of ₹1.5 Lakhs+. Prizes are distributed to the top-performing teams based on the final standings of the flagship round. Detailed prize breakdowns will be announced closer to the event.',
   },
   {
     question: 'How can I sponsor or partner with K³?',

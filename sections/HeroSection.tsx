@@ -187,8 +187,9 @@ export default function HeroSection() {
           </div>
 
           <p className="hero__content-item text-base md:text-lg text-center text-slate-300/80 max-w-xl mt-2 leading-relaxed">
-            An offline national-level competitive programming contest by IIIT Kottayam 40 home
-            teams, 120+ visiting teams, three intense rounds.
+            K³ (Kottayam Koding Kontest) is an offline national-level competitive programming
+            contest by IIIT Kottayam with 40 home teams, 120+ visiting teams, and a single
+            flagship round that crowns the champions.
           </p>
 
           <div className="hero__content-item flex items-center gap-4 mt-8">
@@ -202,7 +203,7 @@ export default function HeroSection() {
               href="#timeline"
               className="flex items-center gap-2 border border-white/15 hover:border-white/30 hover:bg-white/5 transition-all rounded-full px-7 h-12 text-white/90"
             >
-              <span>Contest Rounds</span>
+              <span>Contest Format</span>
               <ChevronRightIcon size={16} />
             </a>
           </div>

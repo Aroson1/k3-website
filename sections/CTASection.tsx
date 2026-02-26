@@ -27,7 +27,7 @@ export default function CTASection() {
               transition={{ delay: 0.1, type: 'spring', stiffness: 280, damping: 70, mass: 1 }}
             >
               Ready to compete
-              <br className="hidden md:block" /> at K³?
+              <br className="hidden md:block" /> at K³ (Kottayam Koding Kontest)?
             </motion.h2>
             <motion.p
               className="text-pink-100/70 text-base md:text-lg mt-4 max-w-md"

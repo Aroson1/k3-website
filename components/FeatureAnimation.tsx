@@ -13,7 +13,7 @@ const stats = [
     icon: 'https://framerusercontent.com/images/6Tkstol08Sqrk7tHK9I5TV6R9E.png',
   },
   {
-    label: '3 Intense Rounds',
+    label: '1 Flagship Round',
     icon: 'https://framerusercontent.com/images/vbJZq68zihPwJjuxXlu5QAjvfo.png',
   },
   {

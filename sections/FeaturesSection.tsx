@@ -1,7 +1,7 @@
 'use client';
 import SectionTitle from '@/components/SectionTitle';
 import { motion } from 'motion/react';
-import { CalendarIcon, ClockIcon, FlagIcon, SwordsIcon, TrophyIcon, UsersIcon } from 'lucide-react';
+import { CalendarIcon, ClockIcon, CodeIcon, TrophyIcon, UsersIcon } from 'lucide-react';
 
 const timelineEvents = [
   {
@@ -25,28 +25,10 @@ const timelineEvents = [
   {
     date: 'Mar 21, 2026',
     time: '10:00 AM',
-    title: 'Round 1  Debugging',
+    title: 'Competitive Programming Round',
     description:
-      'Identify and fix bugs in incorrect code  test your precision and eye for detail. Top teams advance.',
-    icon: <FlagIcon className="size-5" />,
-    status: 'upcoming' as const,
-  },
-  {
-    date: 'Mar 21, 2026',
-    time: '3:00 PM',
-    title: 'Round 2  Reverse Coding',
-    description:
-      'Deduce the underlying logic solely from sample outputs  challenge your analytical thinking.',
-    icon: <SwordsIcon className="size-5" />,
-    status: 'upcoming' as const,
-  },
-  {
-    date: 'Mar 22, 2026',
-    time: '10:00 AM',
-    title: 'Round 3  Head-to-Head Finals',
-    description:
-      'Go head-to-head against the best  the fastest team to solve wins the championship.',
-    icon: <TrophyIcon className="size-5" />,
+      'A single flagship Codeforces round blending speed, accuracy, and depth to decide the champions.',
+    icon: <CodeIcon className="size-5" />,
     status: 'upcoming' as const,
   },
   {
@@ -68,7 +50,7 @@ export default function FeaturesSection() {
       <SectionTitle
         text1="Event"
         text2="Contest Timeline"
-        text3="Key dates and milestones  from registration to the grand finale."
+        text3="Key dates for K³ (Kottayam Koding Kontest)  from registration to the single flagship round."
       />
 
       <div className="max-w-3xl mx-auto mt-16 space-y-0">

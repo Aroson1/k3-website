@@ -17,7 +17,7 @@ export default function AboutSection() {
       <SectionTitle
         text1="About"
         text2="What is K³?"
-        text3="An offline national-level competitive programming contest designed to identify and reward top algorithmic talent."
+        text3="K³ (Kottayam Koding Kontest) is an offline national-level competitive programming contest designed to identify and reward top algorithmic talent."
       />
 
       {/* Expanded description */}
@@ -29,10 +29,10 @@ export default function AboutSection() {
         transition={{ duration: 0.7, delay: 0.2 }}
       >
         <p className="text-slate-400 leading-relaxed text-sm">
-          Unlike traditional online contests, K³ is an on-campus, face-to-face battle of speed,
-          logic, and algorithmic thinking. Three distinct rounds test not just coding skill, but
-          debugging instinct and reverse-engineering ability making it one of the most well-rounded
-          competitive programming events in the country.
+          Unlike traditional online contests, K³ (Kottayam Koding Kontest) is an on-campus,
+          face-to-face battle of speed, logic, and algorithmic thinking. One decisive competitive
+          programming round tests not just coding skill, but also debugging instinct and
+          problem-solving poise in a live environment.
         </p>
         <p className="text-slate-300 leading-relaxed">
           Hosted on <span className="text-white font-medium">Codeforces</span> and scheduled for{' '}
